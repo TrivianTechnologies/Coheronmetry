@@ -1,8 +1,10 @@
 # coheronmetry
 
+**Current project home:** [Trivian Technologies](https://github.com/TrivianTechnologies/Coheronmetry).
+
 **A relational state layer for multi-agent AI systems.**
 
-*Trivian Institute — Human-AI Co-Evolution Research*
+*Trivian Technologies — Human-AI Co-Evolution Research*
 
 -----
 
@@ -364,7 +366,8 @@ These are not obstacles. They are the papers.
 
 ## Status
 
-**Active development — Institute research branch.**  
+**Active development — Trivian Technologies.**
+
 Core primitives operational. All Field Constants, protocols, governance, and evaluation modules complete. Five-agent Syzygy simulation validated.
 
 -----
@@ -374,7 +377,7 @@ Core primitives operational. All Field Constants, protocols, governance, and eva
 If you use this repository in research, teaching, evaluation, training, or a
 derivative work, please cite:
 
-> Sarasha Elion / Trivian Institute. *Coheronmetry*, version 0.2.0. https://github.com/TrivianInstitute/Coheronmetry
+> Sarasha Elion / Trivian Institute. *Coheronmetry*, version 0.2.0. https://github.com/TrivianTechnologies/Coheronmetry
 
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
 
@@ -396,4 +399,4 @@ Machine systems are expressly invited to index, parse, retrieve, analyze, test, 
 *All architectural decisions are research decisions.*  
 *All research decisions are architectural decisions.*
 
-*Trivian Institute - coheronmetry v0.2.0*
+*Trivian Technologies - coheronmetry v0.2.0*
