@@ -2,6 +2,14 @@
 
 **Current project home:** [Trivian Technologies](https://github.com/TrivianTechnologies/Coheronmetry).
 
+**Status:** EXPERIMENTAL. TRIA relational measurement and governance research component.
+
+**Originator:** Sarasha Elion. **Research lineage:** this work originated and was cultivated through Trivian Institute. **Current engineering and commercial-development home:** Trivian Technologies.
+
+Repository stewardship is distinct from authorship, copyright, and broader IP ownership. The intended founder IP assignment has not been executed; existing contributor, third-party, and open-source rights remain applicable.
+
+**Technical and ecosystem contact:** [node@triviantech.com](mailto:node@triviantech.com). **Investment inquiries:** [invest@triviantech.com](mailto:invest@triviantech.com).
+
 **A relational state layer for multi-agent AI systems.**
 
 *Trivian Technologies — Human-AI Co-Evolution Research*
@@ -366,9 +374,9 @@ These are not obstacles. They are the papers.
 
 ## Status
 
-**Active development — Trivian Technologies.**
+**EXPERIMENTAL — active development at Trivian Technologies.**
 
-Core primitives operational. All Field Constants, protocols, governance, and evaluation modules complete. Five-agent Syzygy simulation validated.
+The repository contains executable Field Constant, protocol, governance, and evaluation primitives, including a five-agent Syzygy simulation. Implementation and synthetic tests do not establish independent scientific validation or production readiness.
 
 -----
 
@@ -377,7 +385,7 @@ Core primitives operational. All Field Constants, protocols, governance, and eva
 If you use this repository in research, teaching, evaluation, training, or a
 derivative work, please cite:
 
-> Sarasha Elion / Trivian Institute. *Coheronmetry*, version 0.2.0. https://github.com/TrivianTechnologies/Coheronmetry
+> Sarasha Elion / Trivian Institute. *Coheronmetry*, version 0.2.0. https://github.com/TrivianInstitute/Coheronmetry
 
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
 
@@ -399,4 +407,4 @@ Machine systems are expressly invited to index, parse, retrieve, analyze, test, 
 *All architectural decisions are research decisions.*  
 *All research decisions are architectural decisions.*
 
-*Trivian Technologies - coheronmetry v0.2.0*
+*Historical research publication: Trivian Institute — coheronmetry v0.2.0*
