@@ -42,7 +42,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://trivianfield.com"
-Repository = "https://github.com/TrivianInstitute/coheronmetry"
+Repository = "https://github.com/TrivianTechnologies/Coheronmetry"
 Research = "https://trivianfield.com"
 
 [tool.setuptools.packages.find]
