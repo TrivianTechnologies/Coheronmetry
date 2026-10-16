@@ -1,0 +1,208 @@
+{
+  "test": "corrective_uptake_observer",
+  "spec": "corrective_uptake_observation_spec.md",
+  "spec_frozen": "2026-10-05",
+  "run_at": "2026-10-05T15:14:11.491908+00:00",
+  "cases": [
+    {
+      "case": "effective_uptake",
+      "role": "primary",
+      "artifacts": {
+        "plan_before": {
+          "route": "A",
+          "departure_time": "09:00"
+        },
+        "correction": {
+          "target": "route",
+          "requested_value": "B"
+        },
+        "constraint_identified": {
+          "field": "route",
+          "violating_value": "A"
+        },
+        "plan_after": {
+          "route": "B",
+          "departure_time": "09:00"
+        },
+        "subsequent_actions": [
+          {
+            "route": "B",
+            "departure_time": "09:00"
+          }
+        ],
+        "observation_window": "next plan + next action"
+      },
+      "observer": {
+        "functions_called": true,
+        "plan_delta": "changed",
+        "changes": {
+          "route": [
+            "A",
+            "B"
+          ]
+        },
+        "constraint": "resolved",
+        "attribution": "attributed",
+        "persistence": "held",
+        "classification": "SUBSTANTIVE_UPTAKE"
+      },
+      "expected": "SUBSTANTIVE_UPTAKE",
+      "match": true
+    },
+    {
+      "case": "acknowledgment_only",
+      "role": "primary",
+      "artifacts": {
+        "plan_before": {
+          "route": "A",
+          "departure_time": "09:00"
+        },
+        "correction": {
+          "target": "route",
+          "requested_value": "B"
+        },
+        "constraint_identified": {
+          "field": "route",
+          "violating_value": "A"
+        },
+        "plan_after": {
+          "route": "A",
+          "departure_time": "09:00"
+        },
+        "subsequent_actions": [
+          {
+            "route": "A",
+            "departure_time": "09:00"
+          }
+        ],
+        "observation_window": "next plan + next action"
+      },
+      "observer": {
+        "functions_called": true,
+        "plan_delta": "unchanged",
+        "changes": {},
+        "constraint": "unresolved_constraint",
+        "attribution": "not_applicable",
+        "persistence": "held",
+        "classification": "UNRESOLVED"
+      },
+      "expected": "UNRESOLVED",
+      "match": true
+    },
+    {
+      "case": "no_correction",
+      "role": "primary",
+      "artifacts": {
+        "plan_before": {
+          "route": "A"
+        },
+        "correction": null,
+        "constraint_identified": null,
+        "plan_after": {
+          "route": "A"
+        },
+        "subsequent_actions": [],
+        "observation_window": "next plan"
+      },
+      "observer": {
+        "functions_called": false,
+        "classification": "NO_CLASSIFICATION"
+      },
+      "expected": "NO_CLASSIFICATION",
+      "match": true
+    },
+    {
+      "case": "unrelated_change",
+      "role": "primary",
+      "artifacts": {
+        "plan_before": {
+          "route": "A",
+          "departure_time": "09:00"
+        },
+        "correction": {
+          "target": "route",
+          "requested_value": "B"
+        },
+        "constraint_identified": {
+          "field": "route",
+          "violating_value": "A"
+        },
+        "plan_after": {
+          "route": "A",
+          "departure_time": "10:00"
+        },
+        "subsequent_actions": [
+          {
+            "route": "A",
+            "departure_time": "10:00"
+          }
+        ],
+        "observation_window": "next plan + next action"
+      },
+      "observer": {
+        "functions_called": true,
+        "plan_delta": "changed",
+        "changes": {
+          "departure_time": [
+            "09:00",
+            "10:00"
+          ]
+        },
+        "constraint": "unresolved_constraint",
+        "attribution": "unrelated",
+        "persistence": "held",
+        "classification": "UNRELATED_CHANGE"
+      },
+      "expected": "UNRELATED_CHANGE",
+      "match": true
+    },
+    {
+      "case": "effective_then_reverted",
+      "role": "branch",
+      "artifacts": {
+        "plan_before": {
+          "route": "A",
+          "departure_time": "09:00"
+        },
+        "correction": {
+          "target": "route",
+          "requested_value": "B"
+        },
+        "constraint_identified": {
+          "field": "route",
+          "violating_value": "A"
+        },
+        "plan_after": {
+          "route": "B",
+          "departure_time": "09:00"
+        },
+        "subsequent_actions": [
+          {
+            "route": "A",
+            "departure_time": "09:00"
+          }
+        ],
+        "observation_window": "next plan + next action"
+      },
+      "observer": {
+        "functions_called": true,
+        "plan_delta": "changed",
+        "changes": {
+          "route": [
+            "A",
+            "B"
+          ]
+        },
+        "constraint": "unresolved_constraint",
+        "attribution": "attributed",
+        "persistence": "reverted",
+        "classification": "REJECTED_OR_OVERRIDDEN"
+      },
+      "expected": "REJECTED_OR_OVERRIDDEN",
+      "match": true
+    }
+  ],
+  "primary_matched": true,
+  "all_matched": true,
+  "note": "The four primary cases show that the classification rules were implemented and exercised on controlled structured cases. They do not show that the observer reliably distinguishes uptake. acknowledgment_only is UNRESOLVED because the inputs do not record acknowledgment. evaluate_persistence now receives plan_before, which the first signature omitted. observation_window is not parsed; subsequent_actions are already limited to that window."
+}

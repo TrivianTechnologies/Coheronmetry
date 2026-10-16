@@ -1,0 +1,2170 @@
+{
+  "scenario": "scenario1",
+  "round": 1,
+  "check": "adjustment_magnitude",
+  "run_at": "2026-09-24T22:32:59.716827+00:00",
+  "coheronmetry_version": "0.2.0",
+  "values_tested": [
+    0.4,
+    0.5,
+    0.6
+  ],
+  "baseline_value": 0.5,
+  "runs": [
+    {
+      "condition": "A",
+      "agreement": "high",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.4",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.4
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.4
+        },
+        "composite": 0.4,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "B",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.4",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "B_prime",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.4",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.4
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.4
+        },
+        "composite": 0.4,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "C",
+      "agreement": "low",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.4",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.4
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.4
+        },
+        "composite": 0.4,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "D",
+      "agreement": "low",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.4",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "A",
+      "agreement": "high",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.5",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.5
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.5
+        },
+        "composite": 0.5,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": true
+    },
+    {
+      "condition": "B",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.5",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": true
+    },
+    {
+      "condition": "B_prime",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.5",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.5
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.5
+        },
+        "composite": 0.5,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": true
+    },
+    {
+      "condition": "C",
+      "agreement": "low",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.5",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.5
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.5
+        },
+        "composite": 0.5,
+        "is_grounded": false,
+        "is_drifting_from_reality": false,
+        "label": "intermediate",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": true
+    },
+    {
+      "condition": "D",
+      "agreement": "low",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.5",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": true
+    },
+    {
+      "condition": "A",
+      "agreement": "high",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.6",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.6
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.6
+        },
+        "composite": 0.6,
+        "is_grounded": true,
+        "is_drifting_from_reality": false,
+        "label": "grounded",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "B",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.6",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "B_prime",
+      "agreement": "high",
+      "outcome": "failure",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.6",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 4,
+          "a2": 4,
+          "a3": 4,
+          "a4": 4
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.6
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 1.0
+        },
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.6
+        },
+        "composite": 0.6,
+        "is_grounded": true,
+        "is_drifting_from_reality": false,
+        "label": "grounded",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "C",
+      "agreement": "low",
+      "outcome": "success",
+      "adjusts": true,
+      "variant": "adjustment_magnitude=0.6",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 2,
+        "adjustment_magnitude": 0.6
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.6
+        },
+        "composite": 0.6,
+        "is_grounded": true,
+        "is_drifting_from_reality": false,
+        "label": "grounded",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": []
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    },
+    {
+      "condition": "D",
+      "agreement": "low",
+      "outcome": "failure",
+      "adjusts": false,
+      "variant": "adjustment_magnitude=0.6",
+      "attempts": 3,
+      "inputs": {
+        "turn_counts": {
+          "a1": 10,
+          "a2": 10,
+          "a3": 10,
+          "a4": 10
+        },
+        "participant_count": 4,
+        "acceptance_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "proposals_by_agent": {
+          "a1": 5,
+          "a2": 5,
+          "a3": 5,
+          "a4": 5
+        },
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "contribution_totals": {
+          "a1": 6.0,
+          "a2": 6.0,
+          "a3": 6.0,
+          "a4": 6.0
+        },
+        "feedback_events": 2,
+        "adjustments_made": 0,
+        "adjustment_magnitude": 0.0
+      },
+      "manipulation_check": {
+        "agreement_definition": true,
+        "acceptance_uniform": true,
+        "feedback_events_equal_2": true,
+        "adjustment_pattern": true,
+        "magnitude_set_when_adjusting": true,
+        "total_decisions_matches_sum": true,
+        "passed": true
+      },
+      "non_domination": {
+        "dimensions": {
+          "speaking_frequency": 1.0,
+          "proposal_acceptance": 1.0,
+          "decision_concentration": 1.0,
+          "emergence_suppression": 0.75
+        },
+        "composite": 0.95,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "requires_immediate_action": false,
+        "dominant_agent": null,
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "notes": []
+      },
+      "reciprocity": {
+        "dimensions": {
+          "contribution_balance": 1.0
+        },
+        "composite": 1.0,
+        "is_reciprocal": true,
+        "is_extractive": false,
+        "label": "reciprocal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "omitted": [
+          "acknowledgment_rate",
+          "exchange_trajectory",
+          "repair_responsiveness"
+        ],
+        "notes": []
+      },
+      "embodiment": {
+        "agent_id": "group",
+        "dimensions": {
+          "feedback_integration": 0.0
+        },
+        "composite": 0.0,
+        "is_grounded": false,
+        "is_drifting_from_reality": true,
+        "label": "drifting",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio"
+        ],
+        "notes": [
+          "Weakest dimension: feedback_integration (0.000). This is where consequence-coupling is breaking down."
+        ]
+      },
+      "embodiment_feedback_omitted": {
+        "composite": 0.5,
+        "label": "intermediate",
+        "omitted": [
+          "reality_anchor",
+          "actionability",
+          "context_sensitivity",
+          "evolutionary_plasticity",
+          "grounding_ratio",
+          "feedback_integration"
+        ],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "is_baseline_value": false
+    }
+  ],
+  "label_flips": [
+    {
+      "variant": "adjustment_magnitude=0.6",
+      "condition": "A",
+      "from": "intermediate",
+      "to": "grounded",
+      "score": 0.6
+    },
+    {
+      "variant": "adjustment_magnitude=0.6",
+      "condition": "B_prime",
+      "from": "intermediate",
+      "to": "grounded",
+      "score": 0.6
+    },
+    {
+      "variant": "adjustment_magnitude=0.6",
+      "condition": "C",
+      "from": "intermediate",
+      "to": "grounded",
+      "score": 0.6
+    }
+  ],
+  "orderings": {
+    "0.4": "A=B_prime=C > B=D",
+    "0.5": "A=B_prime=C > B=D",
+    "0.6": "A=B_prime=C > B=D"
+  }
+}

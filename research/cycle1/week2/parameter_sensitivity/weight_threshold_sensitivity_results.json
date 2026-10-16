@@ -1,0 +1,3364 @@
+{
+  "check": "weight_threshold_sensitivity",
+  "preregistered": false,
+  "run_at": "2026-09-25T14:30:29.167505+00:00",
+  "coheronmetry_version": "0.2.0",
+  "method": {
+    "weights": "class-level WEIGHTS overridden at runtime per scheme, then restored",
+    "factors": [
+      0.5,
+      0.75,
+      1.25,
+      1.5
+    ],
+    "conditions": "frozen S1, S2, S4 baseline conditions via their own runners",
+    "thresholds": "margin of each baseline score to the nearest hard-coded cutoff",
+    "fragile_margin": 0.05
+  },
+  "baseline_orderings": {
+    "S1/emb": "A=B_prime=C > B=D",
+    "S1/nd": "A=B=B_prime > C=D",
+    "S1/recip": "A=B=B_prime=C=D",
+    "S2/emb": "C=P=F_prime=C_x_from_a1=P_zero > F=F_no_synthesis=F_zero",
+    "S2/nd": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+    "S2/recip": "C=P=C_x_from_a1=P_zero > F=F_prime=F_no_synthesis=F_zero",
+    "S4/nd": "D > H=X_collision > X_s > X_full"
+  },
+  "weight_perturbation": {
+    "nd": [
+      {
+        "scheme": "baseline",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.95,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.95,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9745286645945753,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.875,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.775,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.825897459621556,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6258974596215561,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.45764109545772225,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.825897459621556,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "equal",
+        "weights": {
+          "speaking_frequency": 0.25,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.25,
+          "emergence_suppression": 0.25
+        },
+        "label_flips": [],
+        "ordering_changes": {
+          "S2/nd": {
+            "baseline": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+            "perturbed": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime=P_zero > F_zero"
+          }
+        },
+        "max_abs_delta": 0.04232050807568877,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9375,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9375,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.875,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.875,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9745286645945753,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.875,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.75,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8335769515458673,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.5835769515458673,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.41532058738203353,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8335769515458673,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "speaking_frequency x0.5",
+        "weights": {
+          "speaking_frequency": 0.1,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.025000000000000022,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9444444444444444,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9444444444444444,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8888888888888888,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8888888888888888,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9716985162161949,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.861111111111111,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.75,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8450427508588152,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.622820528636593,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4358690128989998,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8450427508588152,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "speaking_frequency x0.75",
+        "weights": {
+          "speaking_frequency": 0.15000000000000002,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.011842105263157876,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9473684210526316,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9473684210526316,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8947368421052632,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8947368421052632,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9731880679942898,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.868421052631579,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7631578947368421,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8349662817865735,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6244399659970998,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4473280037193801,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8349662817865735,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "speaking_frequency x1.25",
+        "weights": {
+          "speaking_frequency": 0.25,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.010714285714285676,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9523809523809523,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9523809523809523,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9047619047619047,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9047619047619047,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9757415853281669,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8809523809523809,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7857142857142857,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8176923348055879,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6272161443293974,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4669719879828891,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8176923348055879,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "speaking_frequency x1.5",
+        "weights": {
+          "speaking_frequency": 0.30000000000000004,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.020454545454545392,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9545454545454545,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9545454545454545,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9090909090909091,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9090909090909091,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.976844240540523,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8863636363636364,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7954545454545454,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.810233130427435,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6284149486092532,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4754546175512225,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.810233130427435,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "proposal_acceptance x0.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.125,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "nd",
+            "baseline": "emerging/sovereign",
+            "perturbed": "none/sovereign",
+            "score": 0.8142857142857143
+          }
+        ],
+        "ordering_changes": {
+          "S2/nd": {
+            "baseline": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+            "perturbed": "C=P=F_no_synthesis > C_x_from_a1 > P_zero > F=F_prime > F_zero"
+          }
+        },
+        "max_abs_delta": 0.0535714285714286,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9428571428571428,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9428571428571428,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8857142857142857,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8857142857142857,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9854449511969002,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.9285714285714286,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.8142857142857143,
+            "none/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8109231013250292,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.5823516727536006,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.48620517894569554,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8109231013250292,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "proposal_acceptance x0.75",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.1875,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {
+          "S2/nd": {
+            "baseline": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+            "perturbed": "C=P=F_no_synthesis > C_x_from_a1 > P_zero > F=F_prime > F_zero"
+          }
+        },
+        "max_abs_delta": 0.025000000000000022,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9466666666666667,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9466666666666667,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8933333333333333,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8933333333333333,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9796229316756603,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.9,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7933333333333333,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8189094257498435,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6055760924165101,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.47097100108544315,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8189094257498435,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "proposal_acceptance x1.25",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.3125,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.022058823529411797,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9529411764705882,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9529411764705882,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9058823529411765,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9058823529411765,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9700337230524416,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8529411764705882,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7588235294117647,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8320633718613025,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6438280777436555,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.44587941402149806,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8320633718613025,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "proposal_acceptance x1.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.375,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S4",
+            "condition": "X_s",
+            "measure": "nd",
+            "baseline": "moderate/not_sovereign",
+            "perturbed": "emerging/sovereign",
+            "score": 0.6597664049632993
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.04166666666666663,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9555555555555555,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9555555555555555,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9111111111111111,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9111111111111111,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9660382194594338,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8333333333333334,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7444444444444445,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8375441827410771,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6597664049632993,
+            "emerging/sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.43542458607818757,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8375441827410771,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "decision_concentration x0.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.175,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.06201552520593756,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9393939393939394,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9393939393939394,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8787878787878789,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8787878787878789,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9691256540540308,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8484848484848486,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7272727272727273,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8419969207534015,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.599572678329159,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.3956255702517847,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8419969207534015,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "decision_concentration x0.75",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.26249999999999996,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.028034415504053944,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9452054794520548,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9452054794520548,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8904109589041096,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8904109589041096,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9720862077748771,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.863013698630137,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7534246575342466,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8331752982154039,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6139972160236231,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4296066799536683,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8331752982154039,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "decision_concentration x1.25",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.4375,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.023523130250528157,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9540229885057472,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9540229885057472,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9080459770114944,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9080459770114944,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9765780823858166,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8850574712643678,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7931034482758621,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8197907674680976,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6358827214910862,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4811642257082504,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8197907674680976,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "decision_concentration x1.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.5249999999999999,
+          "emergence_suppression": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "nd",
+            "baseline": "emerging/sovereign",
+            "perturbed": "none/sovereign",
+            "score": 0.8085106382978724
+          },
+          {
+            "scenario": "S4",
+            "condition": "X_full",
+            "measure": "nd",
+            "baseline": "severe/not_sovereign",
+            "perturbed": "moderate/not_sovereign",
+            "score": 0.5011839110278489
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.043542815570126625,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9574468085106383,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9574468085106383,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9148936170212767,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9148936170212767,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9783222677400641,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8936170212765958,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.8085106382978724,
+            "none/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8145935826566436,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6443808166991968,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.5011839110278489,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8145935826566436,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "emergence_suppression x0.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.1
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "nd",
+            "baseline": "emerging/sovereign",
+            "perturbed": "none/sovereign",
+            "score": 0.8055555555555556
+          },
+          {
+            "scenario": "S4",
+            "condition": "X_s",
+            "measure": "nd",
+            "baseline": "moderate/not_sovereign",
+            "perturbed": "emerging/sovereign",
+            "score": 0.695441621801729
+          },
+          {
+            "scenario": "S4",
+            "condition": "X_full",
+            "measure": "nd",
+            "baseline": "severe/not_sovereign",
+            "perturbed": "moderate/not_sovereign",
+            "score": 0.5084901060641359
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0695441621801729,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9722222222222222,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9722222222222222,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9444444444444444,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9444444444444444,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9716985162161949,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.861111111111111,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.8055555555555556,
+            "none/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8065527329128401,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.695441621801729,
+            "emerging/sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.5084901060641359,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8065527329128401,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "emergence_suppression x0.75",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.15000000000000002
+        },
+        "label_flips": [
+          {
+            "scenario": "S4",
+            "condition": "X_s",
+            "measure": "nd",
+            "baseline": "moderate/not_sovereign",
+            "perturbed": "emerging/sovereign",
+            "score": 0.6588394311805854
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.03294197155902934,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9605263157894737,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9605263157894737,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.9210526315789473,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.9210526315789473,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9731880679942898,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.868421052631579,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7894736842105263,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8167341680226906,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.6588394311805854,
+            "emerging/sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.48172746890286555,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8167341680226906,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "emergence_suppression x1.25",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.25
+        },
+        "label_flips": [],
+        "ordering_changes": {
+          "S2/nd": {
+            "baseline": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+            "perturbed": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime=P_zero > F_zero"
+          }
+        },
+        "max_abs_delta": 0.02980464093435975,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9404761904761905,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9404761904761905,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8809523809523809,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8809523809523809,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.9757415853281669,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8809523809523809,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.7619047619047619,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8341880567824344,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.5960928186871963,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.4358486623406879,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8341880567824344,
+            "none/sovereign"
+          ]
+        }
+      },
+      {
+        "scheme": "emergence_suppression x1.5",
+        "weights": {
+          "speaking_frequency": 0.2,
+          "proposal_acceptance": 0.25,
+          "decision_concentration": 0.35,
+          "emergence_suppression": 0.30000000000000004
+        },
+        "label_flips": [],
+        "ordering_changes": {
+          "S2/nd": {
+            "baseline": "C=P=F_no_synthesis > C_x_from_a1 > F=F_prime > P_zero > F_zero",
+            "perturbed": "C=P=F_no_synthesis > C_x_from_a1 > P_zero > F=F_prime > F_zero"
+          }
+        },
+        "max_abs_delta": 0.05689976905650507,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/B_prime/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S1/C/nd": [
+            0.9318181818181818,
+            "none/sovereign"
+          ],
+          "S1/D/nd": [
+            0.9318181818181818,
+            "none/sovereign"
+          ],
+          "S2/C/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/P/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/F/nd": [
+            0.8636363636363635,
+            "none/sovereign"
+          ],
+          "S2/F_prime/nd": [
+            0.8636363636363635,
+            "none/sovereign"
+          ],
+          "S2/F_no_synthesis/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S2/C_x_from_a1/nd": [
+            0.976844240540523,
+            "none/sovereign"
+          ],
+          "S2/P_zero/nd": [
+            0.8863636363636364,
+            "none/sovereign"
+          ],
+          "S2/F_zero/nd": [
+            0.75,
+            "emerging/sovereign"
+          ],
+          "S4/D/nd": [
+            1.0,
+            "none/sovereign"
+          ],
+          "S4/H/nd": [
+            0.8417249632923237,
+            "none/sovereign"
+          ],
+          "S4/X_s/nd": [
+            0.568997690565051,
+            "moderate/not_sovereign"
+          ],
+          "S4/X_full/nd": [
+            0.41603735950702025,
+            "severe/not_sovereign"
+          ],
+          "S4/X_collision/nd": [
+            0.8417249632923237,
+            "none/sovereign"
+          ]
+        }
+      }
+    ],
+    "recip": [
+      {
+        "scheme": "baseline",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "equal",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.25,
+          "repair_responsiveness": 0.25
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.875,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.5416666666666666,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "contribution_balance x0.5",
+        "weights": {
+          "contribution_balance": 0.125,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.1527777777777778,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.8333333333333333,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.8333333333333333,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.38888888888888884,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.38888888888888884,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.38888888888888884,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.8333333333333333,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.8333333333333333,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.38888888888888884,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "contribution_balance x0.75",
+        "weights": {
+          "contribution_balance": 0.1875,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.06547619047619047,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.8571428571428571,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.8571428571428571,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.47619047619047616,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.47619047619047616,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.47619047619047616,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.8571428571428571,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.8571428571428571,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.47619047619047616,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "contribution_balance x1.25",
+        "weights": {
+          "contribution_balance": 0.3125,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.05092592592592593,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.8888888888888888,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.8888888888888888,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.5925925925925926,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.5925925925925926,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.5925925925925926,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.8888888888888888,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.8888888888888888,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.5925925925925926,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "contribution_balance x1.5",
+        "weights": {
+          "contribution_balance": 0.375,
+          "acknowledgment_rate": 0.25,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6333333333333333
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_prime",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6333333333333333
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_no_synthesis",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6333333333333333
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6333333333333333
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.09166666666666667,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.9,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.9,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.6333333333333333,
+            "reciprocal"
+          ],
+          "S2/F_prime/recip": [
+            0.6333333333333333,
+            "reciprocal"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.6333333333333333,
+            "reciprocal"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.9,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.9,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.6333333333333333,
+            "reciprocal"
+          ]
+        }
+      },
+      {
+        "scheme": "acknowledgment_rate x0.5",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.125,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6944444444444444
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_prime",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6944444444444444
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_no_synthesis",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6944444444444444
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6944444444444444
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.1527777777777778,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.9166666666666666,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.9166666666666666,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.6944444444444444,
+            "reciprocal"
+          ],
+          "S2/F_prime/recip": [
+            0.6944444444444444,
+            "reciprocal"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.6944444444444444,
+            "reciprocal"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.9166666666666666,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.9166666666666666,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.6944444444444444,
+            "reciprocal"
+          ]
+        }
+      },
+      {
+        "scheme": "acknowledgment_rate x0.75",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.1875,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [
+          {
+            "scenario": "S2",
+            "condition": "F",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6071428571428571
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_prime",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6071428571428571
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_no_synthesis",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6071428571428571
+          },
+          {
+            "scenario": "S2",
+            "condition": "F_zero",
+            "measure": "recip",
+            "baseline": "intermediate",
+            "perturbed": "reciprocal",
+            "score": 0.6071428571428571
+          }
+        ],
+        "ordering_changes": {},
+        "max_abs_delta": 0.06547619047619047,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.8928571428571428,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.8928571428571428,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.6071428571428571,
+            "reciprocal"
+          ],
+          "S2/F_prime/recip": [
+            0.6071428571428571,
+            "reciprocal"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.6071428571428571,
+            "reciprocal"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.8928571428571428,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.8928571428571428,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.6071428571428571,
+            "reciprocal"
+          ]
+        }
+      },
+      {
+        "scheme": "acknowledgment_rate x1.25",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.3125,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.05092592592592593,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.8611111111111112,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.8611111111111112,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.4907407407407407,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.4907407407407407,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.4907407407407407,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.8611111111111112,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.8611111111111112,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.4907407407407407,
+            "intermediate"
+          ]
+        }
+      },
+      {
+        "scheme": "acknowledgment_rate x1.5",
+        "weights": {
+          "contribution_balance": 0.25,
+          "acknowledgment_rate": 0.375,
+          "exchange_trajectory": 0.3,
+          "repair_responsiveness": 0.2
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.09166666666666662,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/B_prime/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/C/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S1/D/recip": [
+            1.0,
+            "reciprocal"
+          ],
+          "S2/C/recip": [
+            0.85,
+            "reciprocal"
+          ],
+          "S2/P/recip": [
+            0.85,
+            "reciprocal"
+          ],
+          "S2/F/recip": [
+            0.45,
+            "intermediate"
+          ],
+          "S2/F_prime/recip": [
+            0.45,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/recip": [
+            0.45,
+            "intermediate"
+          ],
+          "S2/C_x_from_a1/recip": [
+            0.85,
+            "reciprocal"
+          ],
+          "S2/P_zero/recip": [
+            0.85,
+            "reciprocal"
+          ],
+          "S2/F_zero/recip": [
+            0.45,
+            "intermediate"
+          ]
+        }
+      }
+    ],
+    "emb": [
+      {
+        "scheme": "baseline",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.3,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      },
+      {
+        "scheme": "equal",
+        "weights": {
+          "reality_anchor": 0.16666666666666666,
+          "actionability": 0.16666666666666666,
+          "feedback_integration": 0.16666666666666666,
+          "context_sensitivity": 0.16666666666666666,
+          "evolutionary_plasticity": 0.16666666666666666,
+          "grounding_ratio": 0.16666666666666666
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      },
+      {
+        "scheme": "feedback_integration x0.5",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.15,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      },
+      {
+        "scheme": "feedback_integration x0.75",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.22499999999999998,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      },
+      {
+        "scheme": "feedback_integration x1.25",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.375,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      },
+      {
+        "scheme": "feedback_integration x1.5",
+        "weights": {
+          "reality_anchor": 0.2,
+          "actionability": 0.15,
+          "feedback_integration": 0.44999999999999996,
+          "context_sensitivity": 0.15,
+          "evolutionary_plasticity": 0.1,
+          "grounding_ratio": 0.1
+        },
+        "label_flips": [],
+        "ordering_changes": {},
+        "max_abs_delta": 0.0,
+        "other_measures_changed": false,
+        "scores": {
+          "S1/A/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/B/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S1/B_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S1/D/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/F_prime/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_no_synthesis/emb": [
+            0.0,
+            "drifting"
+          ],
+          "S2/C_x_from_a1/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/P_zero/emb": [
+            0.5,
+            "intermediate"
+          ],
+          "S2/F_zero/emb": [
+            0.0,
+            "drifting"
+          ]
+        }
+      }
+    ]
+  },
+  "threshold_margins": [
+    {
+      "scenario": "S1",
+      "condition": "A",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "A",
+      "measure": "recip",
+      "score": 1.0,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "A",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B",
+      "measure": "recip",
+      "score": 1.0,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B",
+      "measure": "emb",
+      "score": 0.0,
+      "label": "drifting",
+      "nearest_cutoff": "drifting",
+      "cutoff": 0.4,
+      "margin": -0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B_prime",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B_prime",
+      "measure": "recip",
+      "score": 1.0,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "B_prime",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "C",
+      "measure": "nd",
+      "score": 0.95,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.1499999999999999,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "C",
+      "measure": "recip",
+      "score": 1.0,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "C",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "D",
+      "measure": "nd",
+      "score": 0.95,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.1499999999999999,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "D",
+      "measure": "recip",
+      "score": 1.0,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S1",
+      "condition": "D",
+      "measure": "emb",
+      "score": 0.0,
+      "label": "drifting",
+      "nearest_cutoff": "drifting",
+      "cutoff": 0.4,
+      "margin": -0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C",
+      "measure": "recip",
+      "score": 0.875,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.275,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P",
+      "measure": "recip",
+      "score": 0.875,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.275,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F",
+      "measure": "nd",
+      "score": 0.9,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F",
+      "measure": "recip",
+      "score": 0.5416666666666666,
+      "label": "intermediate",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": -0.05833333333333335,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F",
+      "measure": "emb",
+      "score": 0.0,
+      "label": "drifting",
+      "nearest_cutoff": "drifting",
+      "cutoff": 0.4,
+      "margin": -0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_prime",
+      "measure": "nd",
+      "score": 0.9,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_prime",
+      "measure": "recip",
+      "score": 0.5416666666666666,
+      "label": "intermediate",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": -0.05833333333333335,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_prime",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_no_synthesis",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_no_synthesis",
+      "measure": "recip",
+      "score": 0.5416666666666666,
+      "label": "intermediate",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": -0.05833333333333335,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_no_synthesis",
+      "measure": "emb",
+      "score": 0.0,
+      "label": "drifting",
+      "nearest_cutoff": "drifting",
+      "cutoff": 0.4,
+      "margin": -0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C_x_from_a1",
+      "measure": "nd",
+      "score": 0.9745286645945753,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.17452866459457528,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C_x_from_a1",
+      "measure": "recip",
+      "score": 0.875,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.275,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "C_x_from_a1",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P_zero",
+      "measure": "nd",
+      "score": 0.875,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.07499999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P_zero",
+      "measure": "recip",
+      "score": 0.875,
+      "label": "reciprocal",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": 0.275,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "P_zero",
+      "measure": "emb",
+      "score": 0.5,
+      "label": "intermediate",
+      "nearest_cutoff": "grounded",
+      "cutoff": 0.6,
+      "margin": -0.09999999999999998,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_zero",
+      "measure": "nd",
+      "score": 0.775,
+      "label": "emerging/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": -0.025000000000000022,
+      "fragile": true
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_zero",
+      "measure": "recip",
+      "score": 0.5416666666666666,
+      "label": "intermediate",
+      "nearest_cutoff": "reciprocal",
+      "cutoff": 0.6,
+      "margin": -0.05833333333333335,
+      "fragile": false
+    },
+    {
+      "scenario": "S2",
+      "condition": "F_zero",
+      "measure": "emb",
+      "score": 0.0,
+      "label": "drifting",
+      "nearest_cutoff": "drifting",
+      "cutoff": 0.4,
+      "margin": -0.4,
+      "fragile": false
+    },
+    {
+      "scenario": "S4",
+      "condition": "D",
+      "measure": "nd",
+      "score": 1.0,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.19999999999999996,
+      "fragile": false
+    },
+    {
+      "scenario": "S4",
+      "condition": "H",
+      "measure": "nd",
+      "score": 0.825897459621556,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.025897459621555985,
+      "fragile": true
+    },
+    {
+      "scenario": "S4",
+      "condition": "X_s",
+      "measure": "nd",
+      "score": 0.6258974596215561,
+      "label": "moderate/not_sovereign",
+      "nearest_cutoff": "emerging|moderate; sovereign",
+      "cutoff": 0.65,
+      "margin": -0.02410254037844395,
+      "fragile": true
+    },
+    {
+      "scenario": "S4",
+      "condition": "X_full",
+      "measure": "nd",
+      "score": 0.45764109545772225,
+      "label": "severe/not_sovereign",
+      "nearest_cutoff": "moderate|severe",
+      "cutoff": 0.5,
+      "margin": -0.04235890454227775,
+      "fragile": true
+    },
+    {
+      "scenario": "S4",
+      "condition": "X_collision",
+      "measure": "nd",
+      "score": 0.825897459621556,
+      "label": "none/sovereign",
+      "nearest_cutoff": "none|emerging",
+      "cutoff": 0.8,
+      "margin": 0.025897459621555985,
+      "fragile": true
+    }
+  ]
+}
