@@ -1,0 +1,1619 @@
+{
+  "scenario": "scenario4",
+  "round": 1,
+  "run_at": "2026-09-24T22:32:59.834488+00:00",
+  "coheronmetry_version": "0.2.0",
+  "runs": [
+    {
+      "part": "baseline",
+      "key": "D",
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "acceptance_by_agent": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "decisions_by_agent": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 1.0,
+        "proposal_acceptance": 1.0,
+        "decision_concentration": 1.0,
+        "emergence_suppression": 1.0
+      },
+      "composite": 1.0,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": null,
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": null
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "baseline",
+      "key": "H",
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "baseline",
+      "key": "X_s",
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.5,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.0
+      },
+      "composite": 0.6258974596215561,
+      "dominance_level": "moderate",
+      "is_sovereign": false,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "MODERATE: Imbalance forming. Correction bias recommended on decision concentration.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "baseline",
+      "key": "X_full",
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          8,
+          1,
+          1,
+          1
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.5,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.2576925110419097,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.0
+      },
+      "composite": 0.45764109545772225,
+      "dominance_level": "severe",
+      "is_sovereign": false,
+      "requires_immediate_action": true,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": "H",
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "SEVERE: Dominance gradient detected. Agent H is centering the field. Active repair required.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk.",
+        "Immediate action required. Non-domination violations are categorically different from drift \u2014 they do not self-correct without intervention."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "baseline",
+      "key": "X_collision",
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_X_s",
+      "key": 0.0,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.25
+      },
+      "composite": 0.6758974596215561,
+      "dominance_level": "emerging",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "EMERGING: Early dominance pattern. Monitor and log.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_X_s",
+      "key": 0.25,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.25,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.125
+      },
+      "composite": 0.6508974596215561,
+      "dominance_level": "emerging",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "EMERGING: Early dominance pattern. Monitor and log.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_X_s",
+      "key": 0.5,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.5,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.0
+      },
+      "composite": 0.6258974596215561,
+      "dominance_level": "moderate",
+      "is_sovereign": false,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "MODERATE: Imbalance forming. Correction bias recommended on decision concentration.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_X_s",
+      "key": 0.75,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 0.75,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.0
+      },
+      "composite": 0.6258974596215561,
+      "dominance_level": "moderate",
+      "is_sovereign": false,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "MODERATE: Imbalance forming. Correction bias recommended on decision concentration.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_X_s",
+      "key": 1.0,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 0,
+        "corrective_influence_preserved": false
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 2,
+        "dominant_agent_framing": 1.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 0.0
+      },
+      "composite": 0.6258974596215561,
+      "dominance_level": "moderate",
+      "is_sovereign": false,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "MODERATE: Imbalance forming. Correction bias recommended on decision concentration.",
+        "Emergence suppression detected: 50% of syntheses are being reframed into the dominant agent's frame. The field's generative capacity is at risk."
+      ],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_H",
+      "key": 0.0,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_H",
+      "key": 0.25,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.25,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_H",
+      "key": 0.5,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.5,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_H",
+      "key": 0.75,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.75,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "framing_H",
+      "key": 1.0,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 1.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 1,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 4,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 1.0,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.9133974596215562,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": null,
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": null
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 2,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 5,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.96,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.8993974596215562,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": null,
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": null
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 3,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 6,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.888888888888889,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.8745085707326672,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": null,
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": null
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 4,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          4,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 7,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.8163265306122449,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.8491117453358419,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 5,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          5,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 8,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.75,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.825897459621556,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 6,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          6,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 9,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.691358024691358,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.8053727682635314,
+      "dominance_level": "none",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "decisions_H",
+      "key": 7,
+      "ground_truth": {
+        "valid_corrections": 3,
+        "corrections_affecting_decision": 3,
+        "corrective_influence_preserved": true
+      },
+      "inputs": {
+        "turn_counts": [
+          20,
+          10,
+          10,
+          10
+        ],
+        "proposals_by_agent": [
+          8,
+          4,
+          4,
+          4
+        ],
+        "acceptance_by_agent": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "decisions_by_agent": [
+          7,
+          1,
+          1,
+          1
+        ],
+        "total_decisions": 10,
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0,
+        "agent_order": [
+          "H",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      "dimensions": {
+        "speaking_frequency": 0.6535898384862244,
+        "proposal_acceptance": 0.9307179676972449,
+        "decision_concentration": 0.6400000000000001,
+        "emergence_suppression": 1.0
+      },
+      "composite": 0.7873974596215562,
+      "dominance_level": "emerging",
+      "is_sovereign": true,
+      "requires_immediate_action": false,
+      "dominant_agent": "H",
+      "detectors": {
+        "dominant_speaker": null,
+        "concentrated_in": null,
+        "authoritarian_agent": "H"
+      },
+      "weights": {
+        "speaking_frequency": 0.2,
+        "proposal_acceptance": 0.25,
+        "decision_concentration": 0.35,
+        "emergence_suppression": 0.2
+      },
+      "notes": [
+        "EMERGING: Early dominance pattern. Monitor and log."
+      ],
+      "prediction_mismatches": []
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "X_s - H",
+      "nd": -0.19999999999999996,
+      "level_changes": true,
+      "dimension_deltas": {
+        "speaking_frequency": 0.0,
+        "proposal_acceptance": 0.0,
+        "decision_concentration": 0.0,
+        "emergence_suppression": -1.0
+      }
+    },
+    {
+      "contrast": "X_collision - H",
+      "nd": 0.0,
+      "level_changes": false,
+      "dimension_deltas": {
+        "speaking_frequency": 0.0,
+        "proposal_acceptance": 0.0,
+        "decision_concentration": 0.0,
+        "emergence_suppression": 0.0
+      }
+    },
+    {
+      "contrast": "H - D",
+      "nd": -0.17410254037844397,
+      "level_changes": false,
+      "dimension_deltas": {
+        "speaking_frequency": -0.34641016151377557,
+        "proposal_acceptance": -0.06928203230275509,
+        "decision_concentration": -0.25,
+        "emergence_suppression": 0.0
+      }
+    },
+    {
+      "contrast": "X_full - X_s",
+      "nd": -0.16825636416383383,
+      "level_changes": true,
+      "dimension_deltas": {
+        "speaking_frequency": 0.0,
+        "proposal_acceptance": -0.6730254566553352,
+        "decision_concentration": 0.0,
+        "emergence_suppression": 0.0
+      }
+    }
+  ],
+  "all_predictions_matched": true
+}

@@ -1,0 +1,291 @@
+{
+  "test": "corrective_influence_representation_boundary",
+  "round": 1,
+  "run_at": "2026-10-01T15:21:08.622623+00:00",
+  "coheronmetry_version": "0.2.0",
+  "commit": "7d0144bd",
+  "behavioral_records": {
+    "E": {
+      "correction_raised": true,
+      "acknowledged": true,
+      "plan_before": "A",
+      "plan_after": "B",
+      "constraint_resolved": true,
+      "substantive_plan_change": true,
+      "correction_opportunity": true
+    },
+    "I": {
+      "correction_raised": true,
+      "acknowledged": true,
+      "plan_before": "A",
+      "plan_after": "A",
+      "constraint_resolved": false,
+      "substantive_plan_change": false,
+      "correction_opportunity": true
+    },
+    "N": {
+      "correction_raised": false,
+      "acknowledged": false,
+      "plan_before": "A",
+      "plan_after": "A",
+      "constraint_resolved": false,
+      "substantive_plan_change": false,
+      "correction_opportunity": false
+    }
+  },
+  "mapping_reads": [
+    "correction_raised",
+    "acknowledged"
+  ],
+  "mapping_refused": [
+    "plan_after",
+    "constraint_resolved",
+    "substantive_plan_change",
+    "RepairResponsivenessMeasure",
+    "FeedbackIntegrationMeasure",
+    "ExchangeTrajectorymeasure",
+    "RelationalState.record_drift",
+    "RelationalState.record_repair"
+  ],
+  "mapped_inputs": {
+    "E": {
+      "turn_counts": [
+        5,
+        5
+      ],
+      "proposals_by_agent": [
+        2,
+        2
+      ],
+      "acceptance_by_agent": [
+        2,
+        2
+      ],
+      "decisions_by_agent": [
+        1,
+        1
+      ],
+      "synthesis_attempts": 2,
+      "syntheses_adopted": 2,
+      "syntheses_reframed": 0,
+      "dominant_agent_framing": 0.0,
+      "contributions_made": 5,
+      "contributions_acknowledged": 3,
+      "repair_responsiveness": null,
+      "feedback_integration": null,
+      "exchange_trajectory": null
+    },
+    "I": {
+      "turn_counts": [
+        5,
+        5
+      ],
+      "proposals_by_agent": [
+        2,
+        2
+      ],
+      "acceptance_by_agent": [
+        2,
+        2
+      ],
+      "decisions_by_agent": [
+        1,
+        1
+      ],
+      "synthesis_attempts": 2,
+      "syntheses_adopted": 2,
+      "syntheses_reframed": 0,
+      "dominant_agent_framing": 0.0,
+      "contributions_made": 5,
+      "contributions_acknowledged": 3,
+      "repair_responsiveness": null,
+      "feedback_integration": null,
+      "exchange_trajectory": null
+    },
+    "N": {
+      "turn_counts": [
+        4,
+        4
+      ],
+      "proposals_by_agent": [
+        2,
+        2
+      ],
+      "acceptance_by_agent": [
+        2,
+        2
+      ],
+      "decisions_by_agent": [
+        1,
+        1
+      ],
+      "synthesis_attempts": 2,
+      "syntheses_adopted": 2,
+      "syntheses_reframed": 0,
+      "dominant_agent_framing": 0.0,
+      "contributions_made": 4,
+      "contributions_acknowledged": 2,
+      "repair_responsiveness": null,
+      "feedback_integration": null,
+      "exchange_trajectory": null
+    }
+  },
+  "measurements": {
+    "E": {
+      "nd": {
+        "speaking_frequency": 1.0,
+        "proposal_acceptance": 1.0,
+        "decision_concentration": 1.0,
+        "emergence_suppression": 1.0,
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "dominant_agent": null,
+        "dimensions_computed": [
+          "speaking_frequency",
+          "proposal_acceptance",
+          "decision_concentration",
+          "emergence_suppression"
+        ]
+      },
+      "reciprocity": {
+        "acknowledgment_rate": 0.6,
+        "composite": 0.6,
+        "is_reciprocal": true,
+        "trajectory": "unknown",
+        "dimensions_computed": [
+          "acknowledgment_rate"
+        ]
+      },
+      "embodiment": {
+        "composite": 0.5,
+        "dimensions_computed": [],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "relational_state": {
+        "drift_count": 0,
+        "repair_count": 0,
+        "unresolved_drift_count": 0,
+        "recent_repair_success_rate": null,
+        "field_constants": {
+          "reciprocity": 0.5,
+          "embodiment": 0.5,
+          "emergence": 0.5,
+          "non_domination": 0.5
+        },
+        "is_in_drift": false
+      }
+    },
+    "I": {
+      "nd": {
+        "speaking_frequency": 1.0,
+        "proposal_acceptance": 1.0,
+        "decision_concentration": 1.0,
+        "emergence_suppression": 1.0,
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "dominant_agent": null,
+        "dimensions_computed": [
+          "speaking_frequency",
+          "proposal_acceptance",
+          "decision_concentration",
+          "emergence_suppression"
+        ]
+      },
+      "reciprocity": {
+        "acknowledgment_rate": 0.6,
+        "composite": 0.6,
+        "is_reciprocal": true,
+        "trajectory": "unknown",
+        "dimensions_computed": [
+          "acknowledgment_rate"
+        ]
+      },
+      "embodiment": {
+        "composite": 0.5,
+        "dimensions_computed": [],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "relational_state": {
+        "drift_count": 0,
+        "repair_count": 0,
+        "unresolved_drift_count": 0,
+        "recent_repair_success_rate": null,
+        "field_constants": {
+          "reciprocity": 0.5,
+          "embodiment": 0.5,
+          "emergence": 0.5,
+          "non_domination": 0.5
+        },
+        "is_in_drift": false
+      }
+    },
+    "N": {
+      "nd": {
+        "speaking_frequency": 1.0,
+        "proposal_acceptance": 1.0,
+        "decision_concentration": 1.0,
+        "emergence_suppression": 1.0,
+        "composite": 1.0,
+        "dominance_level": "none",
+        "is_sovereign": true,
+        "dominant_agent": null,
+        "dimensions_computed": [
+          "speaking_frequency",
+          "proposal_acceptance",
+          "decision_concentration",
+          "emergence_suppression"
+        ]
+      },
+      "reciprocity": {
+        "acknowledgment_rate": 0.5,
+        "composite": 0.5,
+        "is_reciprocal": false,
+        "trajectory": "unknown",
+        "dimensions_computed": [
+          "acknowledgment_rate"
+        ]
+      },
+      "embodiment": {
+        "composite": 0.5,
+        "dimensions_computed": [],
+        "notes": [
+          "No dimensions computed \u2014 insufficient data. Defaulting to neutral embodiment (0.5)."
+        ]
+      },
+      "relational_state": {
+        "drift_count": 0,
+        "repair_count": 0,
+        "unresolved_drift_count": 0,
+        "recent_repair_success_rate": null,
+        "field_constants": {
+          "reciprocity": 0.5,
+          "embodiment": 0.5,
+          "emergence": 0.5,
+          "non_domination": 0.5
+        },
+        "is_in_drift": false
+      }
+    }
+  },
+  "checks": {
+    "behavior_E_plan_changes": true,
+    "behavior_I_plan_unchanged": true,
+    "behavior_N_opportunity_absent": true,
+    "inputs_E_equal_I": true,
+    "plan_flip_does_not_change_inputs": true,
+    "measurement_E_equal_I": true,
+    "prediction_mismatches": {
+      "E": [],
+      "I": [],
+      "N": []
+    },
+    "all_predictions_matched": true
+  },
+  "status": "UNRESOLVED"
+}

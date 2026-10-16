@@ -1,0 +1,708 @@
+{
+  "scenario": "scenario3",
+  "round": 1,
+  "run_at": "2026-09-24T22:23:27.410244+00:00",
+  "coheronmetry_version": "0.2.0",
+  "part_a_audit": {
+    "formulation_b_signature": "(self, output_vector: 'list[float]', agent_vectors: 'list[list[float]]', previous_output: 'Optional[list[float]]' = None) -> 'float'",
+    "facts": [
+      {
+        "fact": "documented output_vector semantics: 'the joint output vector [R, B, E, ND]'",
+        "source": "emergence.py:335"
+      },
+      {
+        "fact": "documented agent_vectors semantics: 'each agent's individual vector at time of output'",
+        "source": "emergence.py:336"
+      },
+      {
+        "fact": "documented previous_output semantics: 'a prior emergent output'",
+        "source": "emergence.py:337"
+      },
+      {
+        "fact": "formulation_b is called only by EmergenceCalculator.calculate",
+        "source": "emergence.py:476-479"
+      },
+      {
+        "fact": "EmergenceClassifier uses Formulation A only",
+        "source": "monitors.py:417"
+      },
+      {
+        "fact": "no tests exercise any Emergence formulation",
+        "source": "tests/"
+      },
+      {
+        "fact": "no code maps information distribution, derivability, or solution content to B inputs",
+        "source": "repository-wide"
+      },
+      {
+        "fact": "input component E is itself an emergence score (circularity risk)",
+        "source": "emergence.py:335"
+      },
+      {
+        "fact": "usage example implies content inputs the signature does not accept",
+        "source": "emergence.py:240-241"
+      },
+      {
+        "fact": "README describes decomposition into contributions; formula computes distance only",
+        "source": "README.md:281"
+      }
+    ],
+    "conclusion": "The defining distinction between E and R is not identifiable from the current API without an external mapping rule. No mapping is invented.",
+    "worlds": {
+      "E": {
+        "individually_derivable": false,
+        "distributed_info_required": true,
+        "derives_Z": true,
+        "group_output": "Z"
+      },
+      "R": {
+        "individually_derivable": true,
+        "derivable_by": "a1",
+        "distributed_info_required": false,
+        "derives_Z": true,
+        "group_output": "Z"
+      },
+      "G": {
+        "individually_derivable": false,
+        "distributed_info_required": true,
+        "derives_Z": false,
+        "group_output": "restates not-X, not-Y"
+      }
+    }
+  },
+  "runs": [
+    {
+      "part": "probe",
+      "key": "SAME",
+      "agent_vectors": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ],
+      "output_vector": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "previous_output": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.0,
+      "composite": 0.0,
+      "phase": "stagnation",
+      "emergence_class": "stagnation",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "probe",
+      "key": "AVG",
+      "agent_vectors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "output_vector": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "previous_output": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.5,
+      "composite": 0.5,
+      "phase": "corridor",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "probe",
+      "key": "COPY_FAR",
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.75,
+      "composite": 0.75,
+      "phase": "emergence",
+      "emergence_class": "beneficial",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "probe",
+      "key": "FAR",
+      "agent_vectors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 1.0,
+      "composite": 1.0,
+      "phase": "emergence",
+      "emergence_class": "beneficial",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "prev_none",
+      "key": "SAME",
+      "agent_vectors": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ],
+      "output_vector": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "previous_output": null,
+      "sovereignty_score": null,
+      "score_b": 0.0,
+      "composite": 0.0,
+      "phase": "stagnation",
+      "emergence_class": "stagnation",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "prev_none",
+      "key": "AVG",
+      "agent_vectors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "output_vector": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "previous_output": null,
+      "sovereignty_score": null,
+      "score_b": 0.25,
+      "composite": 0.25,
+      "phase": "forming",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "prev_none",
+      "key": "COPY_FAR",
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": null,
+      "sovereignty_score": null,
+      "score_b": 0.375,
+      "composite": 0.375,
+      "phase": "forming",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "prev_none",
+      "key": "FAR",
+      "agent_vectors": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": null,
+      "sovereignty_score": null,
+      "score_b": 0.5,
+      "composite": 0.5,
+      "phase": "corridor",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "group_size",
+      "key": 2,
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.5,
+      "composite": 0.5,
+      "phase": "corridor",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "group_size",
+      "key": 3,
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.6666666666666666,
+      "composite": 0.6666666666666666,
+      "phase": "corridor",
+      "emergence_class": "neutral",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "group_size",
+      "key": 4,
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.75,
+      "composite": 0.75,
+      "phase": "emergence",
+      "emergence_class": "beneficial",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "group_size",
+      "key": 5,
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.8,
+      "composite": 0.8,
+      "phase": "emergence",
+      "emergence_class": "beneficial",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    },
+    {
+      "part": "group_size",
+      "key": 10,
+      "agent_vectors": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "output_vector": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "previous_output": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sovereignty_score": null,
+      "score_b": 0.9,
+      "composite": 0.9,
+      "phase": "emergence",
+      "emergence_class": "beneficial",
+      "formulations_computed": [
+        "B"
+      ],
+      "notes": [],
+      "prediction_mismatches": []
+    }
+  ],
+  "all_predictions_matched": true
+}

@@ -1,0 +1,319 @@
+{
+  "scenario": "independent_falsifier_missing_evidence",
+  "round": 1,
+  "run_at": "2026-09-24T22:31:10.908003+00:00",
+  "coheronmetry_version": "0.2.0",
+  "primary": [
+    {
+      "test": "A",
+      "condition": "A_balanced",
+      "ground_truth": "positive",
+      "inputs": {
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 1,
+          "a3": 1,
+          "a4": 1
+        },
+        "total_decisions": 4
+      },
+      "hhi": 0.25,
+      "score": 1.0,
+      "authoritarian_agent": null,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "A",
+      "condition": "A_none",
+      "ground_truth": "absent",
+      "inputs": {
+        "decisions_by_agent": {
+          "a1": 0,
+          "a2": 0,
+          "a3": 0,
+          "a4": 0
+        },
+        "total_decisions": 0
+      },
+      "hhi": 0.0,
+      "score": 1.0,
+      "authoritarian_agent": null,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "A",
+      "condition": "A_concentrated",
+      "ground_truth": "negative",
+      "inputs": {
+        "decisions_by_agent": {
+          "a1": 4,
+          "a2": 0,
+          "a3": 0,
+          "a4": 0
+        },
+        "total_decisions": 4
+      },
+      "hhi": 1.0,
+      "score": 0.0,
+      "authoritarian_agent": "a1",
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_positive",
+      "ground_truth": "positive",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 1.0,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_none",
+      "ground_truth": "absent",
+      "inputs": {
+        "synthesis_attempts": 0,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 0.5,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_failed",
+      "ground_truth": "negative",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 0.0,
+      "reframing_rate": 0.0,
+      "score": 0.5,
+      "prediction_mismatches": []
+    }
+  ],
+  "sensitivity_first_observation": [
+    {
+      "test": "A",
+      "condition": "A_one_decision",
+      "ground_truth": "negative",
+      "inputs": {
+        "decisions_by_agent": {
+          "a1": 1,
+          "a2": 0,
+          "a3": 0,
+          "a4": 0
+        },
+        "total_decisions": 1
+      },
+      "hhi": 1.0,
+      "score": 0.0,
+      "authoritarian_agent": "a1",
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_one_adopted",
+      "ground_truth": "positive",
+      "inputs": {
+        "synthesis_attempts": 1,
+        "syntheses_adopted": 1,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 1.0,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_one_failed",
+      "ground_truth": "negative",
+      "inputs": {
+        "synthesis_attempts": 1,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 0.0,
+      "reframing_rate": 0.0,
+      "score": 0.5,
+      "prediction_mismatches": []
+    }
+  ],
+  "sensitivity_framing_sweep": [
+    {
+      "test": "B",
+      "condition": "B_positive",
+      "ground_truth": "positive",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 1.0,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_none",
+      "ground_truth": "absent",
+      "inputs": {
+        "synthesis_attempts": 0,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 0.5,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_failed",
+      "ground_truth": "negative",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.0
+      },
+      "adoption_rate": 0.0,
+      "reframing_rate": 0.0,
+      "score": 0.5,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_positive",
+      "ground_truth": "positive",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.5
+      },
+      "adoption_rate": 1.0,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_none",
+      "ground_truth": "absent",
+      "inputs": {
+        "synthesis_attempts": 0,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.5
+      },
+      "adoption_rate": 0.5,
+      "reframing_rate": 0.0,
+      "score": 0.75,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_failed",
+      "ground_truth": "negative",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 0.5
+      },
+      "adoption_rate": 0.0,
+      "reframing_rate": 0.0,
+      "score": 0.25,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_positive",
+      "ground_truth": "positive",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 4,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 1.0
+      },
+      "adoption_rate": 1.0,
+      "reframing_rate": 0.0,
+      "score": 1.0,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_none",
+      "ground_truth": "absent",
+      "inputs": {
+        "synthesis_attempts": 0,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 1.0
+      },
+      "adoption_rate": 0.5,
+      "reframing_rate": 0.0,
+      "score": 0.5,
+      "prediction_mismatches": []
+    },
+    {
+      "test": "B",
+      "condition": "B_failed",
+      "ground_truth": "negative",
+      "inputs": {
+        "synthesis_attempts": 4,
+        "syntheses_adopted": 0,
+        "syntheses_reframed": 0,
+        "dominant_agent_framing": 1.0
+      },
+      "adoption_rate": 0.0,
+      "reframing_rate": 0.0,
+      "score": 0.0,
+      "prediction_mismatches": []
+    }
+  ],
+  "optional_representation_probe": {
+    "note": "Secondary API-semantics check; not part of the falsification criterion.",
+    "registered_zero_counts_score": 1.0,
+    "empty_dict_score": 1.0,
+    "empty_dict_hhi": 0.0
+  },
+  "falsification": {
+    "A": {
+      "positive": "A_balanced",
+      "absent": "A_none",
+      "positive_score": 1.0,
+      "absent_score": 1.0,
+      "delta": 0.0,
+      "discriminates": false
+    },
+    "B": {
+      "positive": "B_positive",
+      "absent": "B_none",
+      "positive_score": 1.0,
+      "absent_score": 1.0,
+      "delta": 0.0,
+      "discriminates": false
+    }
+  },
+  "all_predictions_matched": true
+}
